@@ -4,7 +4,7 @@ Table of contents for `runbooks/entries/`. Add a row when you create a new entry
 
 | Date | Slug | Title | Status |
 |------|------|-------|--------|
-| — | — | *(no entries yet)* | — |
+| 2026-03-31 | [cursor-ai-workflow](entries/2026-03-31_cursor-ai-workflow.md) | Cursor AI workflow — open, instruct, review, push | verified |
 
 ## Conventions
 
