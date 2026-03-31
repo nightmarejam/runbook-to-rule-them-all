@@ -1,0 +1,7 @@
+# Local semantic index (when build_index.py lands)
+.runbook_index/
+*.sqlite3
+
+# OS / editor
+.DS_Store
+Thumbs.db

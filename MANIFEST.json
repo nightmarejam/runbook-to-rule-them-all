@@ -1,0 +1,16 @@
+{
+  "name": "runbook-to-rule-them-all",
+  "version": "0.1.0",
+  "description": "Living semantic knowledge base for procedural runbooks.",
+  "required_files": [
+    "README.md",
+    "docs/architecture.md",
+    "runbooks/index.md",
+    "runbooks/templates/standard.md",
+    "runbooks/templates/sandbox.md",
+    "runbooks/templates/investigation.md",
+    "config/search.yaml",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md"
+  ]
+}

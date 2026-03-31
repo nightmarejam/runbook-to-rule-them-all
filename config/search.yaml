@@ -1,0 +1,18 @@
+# Semantic search configuration (placeholder).
+# Implementation: sentence-transformers + local vector store + tools/search_cli.py
+# See docs/architecture.md.
+
+version: 1
+
+embedding:
+  model: "sentence-transformers/all-MiniLM-L6-v2"  # example; tune when implemented
+  device: "cpu"  # cuda when available
+
+index:
+  backend: sqlite  # or flat_file — TBD
+  path: ".runbook_index"  # gitignored when index exists
+
+scope:
+  include_globs:
+    - "runbooks/entries/**/*.md"
+  exclude_globs: []
