@@ -2,6 +2,7 @@
 id: YYYY-MM-DD-slug
 title: ""
 tags: [investigation]
+intuition: ""  # free-text: what you sensed before you had a name for it
 status: draft
 replicated_by: []
 sandbox_ref: ""
@@ -9,6 +10,11 @@ created: YYYY-MM-DD
 last_verified: YYYY-MM-DD
 constella: false
 ---
+
+## Intuition
+
+What pulled you toward this question before you had formal language for it.
+Write freely - no correct answer here.
 
 ## Intent
 
