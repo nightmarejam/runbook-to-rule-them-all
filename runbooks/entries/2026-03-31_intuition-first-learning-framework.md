@@ -81,6 +81,10 @@ This process turns a felt intuition into a named, reusable framework linked acro
   - `runbook-to-rule-them-all/runbooks/entries/2026-03-31_intuition-first-learning-framework.md`
 - `runbooks/index.md` includes a row linking this entry.
 
+## Run history
+
+- 2026-03-31 — outcome: pass — artifacts: pedagogy doc in Constella + investigation template intuition field in RunBook — notes: converted conversation-level intuition into cross-repo framework.
+
 ## Known failure modes
 
 - "Name-first drift": jumping straight to academic terms and losing original intuition quality.

@@ -27,6 +27,10 @@ What must be true before starting.
 
 How you know it worked.
 
+## Run history
+
+- YYYY-MM-DD — outcome: pass|partial|fail — artifacts: <links/paths> — notes: <short deviation summary>
+
 ## Known failure modes
 
 What breaks and why.

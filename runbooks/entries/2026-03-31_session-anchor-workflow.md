@@ -49,6 +49,10 @@ produce one proof artifact, and park everything else.
 - Parking lot captured at least one deferred item (if any emerged).
 - Session ends with a next-anchor suggestion, not an open cognitive loop.
 
+## Run history
+
+- 2026-03-31 — outcome: pass — artifacts: committed runbook entry + synced push to origin/main — notes: validated as a reusable meta-runbook for non-linear execution.
+
 ## Known failure modes
 
 - Over-scoping: trying to solve architecture, implementation, and cleanup in one pass.

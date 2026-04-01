@@ -151,6 +151,10 @@ For the **parent monorepo** at **`/home/jonat/ai-stack/`**, `cd` there instead a
 - On GitHub, the branch (**`main`**) shows the new commit after **`git push`**.
 - Any tests or manual checks you defined in **Steps 5** pass.
 
+## Run history
+
+- 2026-03-31 — outcome: pass — artifacts: `runbooks/index.md`, initial repo commits and push logs — notes: established baseline Cursor->Git->GitHub workflow for beginner repeatability.
+
 ## Known failure modes
 
 - **Wrong folder open in Cursor** — AI edits the wrong project or creates files outside your intent. Fix: **File → Open Folder** on the repo root; close extra windows if confused.

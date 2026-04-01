@@ -39,6 +39,10 @@ Host OS, tools, credentials, disk, network assumptions.
 
 How you confirm the sandbox matches the documented state.
 
+## Run history
+
+- YYYY-MM-DD — outcome: pass|partial|fail — artifacts: <links/paths> — notes: <short deviation summary>
+
 ## Teardown
 
 How to destroy or reset safely.

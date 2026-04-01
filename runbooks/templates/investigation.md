@@ -41,6 +41,10 @@ Chronological or grouped; link to artifacts.
 
 What would confirm or refute the leading explanation.
 
+## Run history
+
+- YYYY-MM-DD — outcome: pass|partial|fail — artifacts: <links/paths> — notes: <short deviation summary>
+
 ## Resolution / next actions
 
 Fix, workaround, escalate, or close with documented unknowns.
