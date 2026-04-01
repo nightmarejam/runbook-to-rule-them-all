@@ -25,39 +25,49 @@
 
 - URL: https://my.freshbooks.com
 - Confirm your plan supports CSV import (Lite plan may not — check Settings > Billing)
-- If import is not available on your tier: [note workaround here after first run]
+- **FreshBooks Lite:** Income cannot be bulk-imported from CSV; enter each line as an invoice + payment per Step 2. Expenses still support CSV import per Step 3.
 
 ---
 
 ## Step 2 — Import Income (Invoices/Payments)
 
-[FILL IN after first run — note exact menu path, field mappings, any gotchas]
+FreshBooks Lite does not support direct CSV import of invoices.
+Enter each income transaction manually as an invoice:
 
-**CSV columns in FreshBooks_Income_2024.csv:**
+1. Clients → New Client (name only required)
+2. Invoices → New Invoice
+3. Set client, date, line item description, amount
+4. Save → More Actions → Add Payment → enter date and method
+5. Mark payment method as Venmo (service clients) or Reverb/Other (gear sales)
 
-```
-date,description,amount,client,category,notes
-```
+**CSV columns:** date, description, amount, client, category, notes
+
+**Key setting:** Use accrual date range but verify with Cash-Based toggle if income shows $0
+
+**Invoice numbering:** Deleted invoices leave gaps — skip duplicate warnings, use next number
 
 ---
 
 ## Step 3 — Import Expenses
 
-[FILL IN after first run]
+FreshBooks supports CSV import for expenses via More Actions → Import.
+If recurring expenses exist, use Make Recurring toggle on first entry.
 
-**CSV columns in FreshBooks_Expenses_2024.csv:**
+**CSV columns:** date, description, amount, vendor, category, notes
 
-```
-date,description,amount,vendor,category,notes
-```
+**Category mappings used:**
+
+- Allen-Vestments → Office Space (Rent or Lease)
+- Still Water Insurance → Business Insurance
+- Bizee LLC filing → Uncategorized (CPA to reclassify as organizational cost)
 
 ---
 
-## Step 4 — Create invoices for sessions without formal invoices
+## Step 4 — Sessions requiring formal invoices
 
-[FILL IN — this is the manual step Jonathan flagged as potentially needed]
-
-Known sessions needing invoices: [list after audit]
+2024: Daniel Baker only (2 payments via Venmo — $800 on 2024-03-27, $200 on 2024-03-29)
+Gear sales entered as product invoices — no formal invoice was issued at time of sale.
+2025: Megan Milius, B. Auden active — invoice on completion of each session.
 
 ---
 
@@ -71,15 +81,23 @@ If they don't match, note discrepancy here and flag for CPA.
 
 ---
 
-## Step 6 — Export FreshBooks report for CPA package
+## Step 6 — Export FreshBooks P&L for CPA
 
-[FILL IN — menu path to export P&L or transaction report]
+Reports → Profit and Loss → set date Jan 1 YYYY – Dec 31 YYYY
+Toggle to accrual view first, then verify Cash-Based in Old Report if income shows $0.
+Export as PDF → save to `projects/tomcat-sound/02_financial/FreshBooks_PnL_YYYY.pdf`
+
+**Known limitation:** COGS not tracked in FreshBooks — enter gear cost on each invoice
+line item going forward (2025+). For 2024, COGS lives in ledger COGS_Matching sheet.
 
 ---
 
 ## Known issues / gotchas from first run
 
-[Fill in as you go]
+- Lite: no CSV import for invoices — manual Clients + Invoices + Add Payment path only.
+- If P&L income is $0, switch accrual/cash (and Old Report cash view) before assuming data is missing.
+- Invoice numbers: gaps after deletes are normal; FreshBooks may warn on duplicates — advance to next free number.
+- Organizational costs (e.g. Bizee) may need CPA reclass; left Uncategorized in FreshBooks until reviewed.
 
 ---
 
