@@ -14,7 +14,7 @@
 - [ ] Income CSV ready: `projects/tomcat-sound/02_financial/FreshBooks_Income_2024.csv`
 - [ ] Expenses CSV ready: `projects/tomcat-sound/02_financial/FreshBooks_Expenses_2024.csv`
 - [ ] Verified financial totals on hand:
-  - Revenue: $6,834.30
+  - Revenue: $6,759.40
   - COGS: $6,317.43
   - Operating expenses: (confirm from ledger)
   - Net loss: ~$9,499 (CPA to confirm)
@@ -64,7 +64,7 @@ Known sessions needing invoices: [list after audit]
 ## Step 5 — Verify totals match audit
 
 After import, confirm FreshBooks totals match:
-- Income total: $6,834.30
+- Income total: $6,759.40
 - Expense total: (from ledger)
 
 If they don't match, note discrepancy here and flag for CPA.
