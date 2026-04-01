@@ -6,7 +6,7 @@ tags:
   - governance
   - constella
   - experiment
-status: draft
+status: verified
 replicated_by: []
 sandbox_ref: ""
 created: 2026-04-01
@@ -26,7 +26,27 @@ FAITHH pointing at Gen8 ChromaDB, `alife_lineage` collection writable, experimen
 
 ## Steps
 
-TODO — to be filled when implementation begins.
+1. Verify prerequisites — confirm Gen8 ChromaDB reachable and `alife_lineage` writable (see prerequisite check script).
+
+2. Run generation zero script:
+
+   ```bash
+   cd /home/jonat/ai-stack && source venv/bin/activate
+   python3 projects/alife/experiments/generation_zero_band1.py
+   ```
+
+3. Verify count increase:
+
+   ```bash
+   python3 - << 'EOF'
+   import chromadb
+   client = chromadb.HttpClient(host="100.79.85.32", port=8000)
+   col = client.get_collection("alife_lineage")
+   print(f"alife_lineage count: {col.count()}")
+   EOF
+   ```
+
+4. Check generation summary in `reports/alife/`.
 
 ## Verification
 
@@ -35,7 +55,7 @@ TODO — to be filled when implementation begins.
 
 ## Run history
 
-- YYYY-MM-DD — outcome: pass|partial|fail — artifacts: <links/paths> — notes: <short deviation summary>
+- 2026-04-01 — outcome: pass — artifacts: `projects/alife/experiments/generation_zero_band1.py`, `reports/alife/generation_zero_band1_20260401_162822.json` — notes: all 50 agents survived all 10 ticks (Band 1 too permissive — resource acquisition consistently outpaces loss). Count: 50,450 → 50,950. Mean fitness 6.224, max 9.174. Band 1 parameters need tightening before generation 1 to create meaningful selection pressure.
 
 ## Known failure modes
 
