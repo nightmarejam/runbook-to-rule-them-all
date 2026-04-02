@@ -59,6 +59,13 @@ FAITHH pointing at Gen8 ChromaDB, `alife_lineage` collection writable, experimen
 - 2026-04-01 (gen 1) — outcome: pass (infrastructure) — notes: 50/50 survived, params too loose
 - 2026-04-01 (gen 2) — outcome: pass (infrastructure) — notes: 50/50 survived, drift insufficient
 - 2026-04-01 (gen 3) — outcome: CONFIRMED — notes: 35/50 survived, 45 depletion events, stdev 1.021. Parameters locked.
+- 2026-04-01 — outcome: partial — artifacts:
+  `projects/alife/experiments/band2_cooperation.py`,
+  `reports/alife/band2_generation1_20260401_223430.json`
+  — notes: Band 2 gen 1 complete. Directional support for hypothesis
+  (A coop 900 vs B 893, A defect 0 vs B 7, signal gap 0.095).
+  Band 3 tie — parameters too permissive. Tighten before gen 2.
+  Oracle randomness working — runs non-deterministic.
 
 ## Known failure modes
 
