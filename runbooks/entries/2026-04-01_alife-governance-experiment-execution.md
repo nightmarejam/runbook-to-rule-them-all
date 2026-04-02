@@ -56,6 +56,9 @@ FAITHH pointing at Gen8 ChromaDB, `alife_lineage` collection writable, experimen
 ## Run history
 
 - 2026-04-01 — outcome: pass — artifacts: `projects/alife/experiments/generation_zero_band1.py`, `reports/alife/generation_zero_band1_20260401_162822.json` — notes: all 50 agents survived all 10 ticks (Band 1 too permissive — resource acquisition consistently outpaces loss). Count: 50,450 → 50,950. Mean fitness 6.224, max 9.174. Band 1 parameters need tightening before generation 1 to create meaningful selection pressure.
+- 2026-04-01 (gen 1) — outcome: pass (infrastructure) — notes: 50/50 survived, params too loose
+- 2026-04-01 (gen 2) — outcome: pass (infrastructure) — notes: 50/50 survived, drift insufficient
+- 2026-04-01 (gen 3) — outcome: CONFIRMED — notes: 35/50 survived, 45 depletion events, stdev 1.021. Parameters locked.
 
 ## Known failure modes
 
